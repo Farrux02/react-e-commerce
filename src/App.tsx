@@ -1,7 +1,10 @@
+import { RouterProvider } from "react-router";
+import router from "./pages";
+
 function App() {
   return (
     <>
-      <p className="text-red-400">Test tailwind</p>
+      <RouterProvider router={router} />
     </>
   );
 }

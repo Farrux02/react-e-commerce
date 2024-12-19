@@ -1,8 +1,10 @@
+import Header from "@/components/Header";
+
 const MainLayout = () => {
   return (
     <div>
-      <header>header</header>
-      <main>
+      <Header />
+      <main className="max-w-[1170px] mx-auto">
         <Outlet />
       </main>
       <footer>footer</footer>

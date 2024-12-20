@@ -1,13 +1,14 @@
+import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 
 const MainLayout = () => {
   return (
-    <div>
+    <div className="w-full h-screen flex flex-col">
       <Header />
-      <main className="max-w-[1170px] mx-auto">
+      <main className="max-w-[1170px] w-full mx-auto flex-1">
         <Outlet />
       </main>
-      <footer>footer</footer>
+      <Footer />
     </div>
   );
 };

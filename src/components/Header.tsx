@@ -22,10 +22,10 @@ const Header = () => {
   );
 
   return (
-    <header className="w-full">
+    <header className="w-full border-b pb-4">
       <div className="bg-black w-full py-3">
-        <div className="flex max-w-[1170px] mx-auto">
-          <p className="text-white text-center flex-1 text-[14px]">
+        <div className="flex flex-col md:flex-row max-w-[1170px] mx-auto">
+          <p className="text-white text-center flex-1 text-[14px] mb-2 md:mb-0">
             {t("labels.summer_sale")}{" "}
             <Link to="#" className="font-semibold underline">
               {t("actions.shop_now")}
@@ -42,11 +42,11 @@ const Header = () => {
           </Select>
         </div>
       </div>
-      <div className="max-w-[1170px] mx-auto mt-10 flex justify-between items-center">
-        <div>
+      <div className="max-w-[1170px] mx-auto mt-10 flex flex-col md:flex-row justify-between items-center">
+        <div className="mb-4 md:mb-0">
           <p className="text-2xl font-bold">Exclusive</p>
         </div>
-        <ul className="flex gap-x-12">
+        <ul className="flex flex-col md:flex-row gap-y-4 md:gap-x-12">
           <li>
             <NavLink to="/" className="text-base font-normal">
               {t("labels.home")}
@@ -68,11 +68,11 @@ const Header = () => {
             </NavLink>
           </li>
         </ul>
-        <div className="flex items-center gap-5">
+        <div className="flex items-center gap-5 mt-4 md:mt-0">
           <div>
             <Input
               placeholder={t("labels.looking_for")}
-              className="rounded bg-[#f5f5f5] border-none w-[243px] px-5 h-[38px] placeholder:text-opacity-50"
+              className="rounded bg-[#f5f5f5] border-none w-full md:w-[243px] px-5 h-[38px] placeholder:text-opacity-50"
             />
           </div>
           <NavLink to="#">

@@ -3,6 +3,16 @@
 @tailwind utilities;
 @layer base {
   :root {
-    --radius: 0.5rem
+    --radius: 0.5rem;
   }
+}
+
+.big-slider .swiper-pagination-bullet {
+  background-color: white;
+  width: 12px;
+  height: 12px;
+}
+.big-slider .swiper-pagination-bullet-active {
+  background-color: red;
+  border: 1px white solid;
 }
